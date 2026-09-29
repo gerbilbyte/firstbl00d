@@ -31,7 +31,7 @@ For this to work properly the following need to be installed:
 ## Installation and running:  
 This doesn't really need to be installed, the bash script can be run from anywhere. Be sure to set it to be executable.  
 The following steps should suffice successful running:  
-```git clone blah```  
+```git clone https://github.com/gerbilbyte/firstbl00d.git```  
 ```cd firstbl00d```  
 ```chmod 755 firstbl00d.sh```  
 
