@@ -1,5 +1,8 @@
 # firstbl00d
-A script to combine several AD commands to be run in one fell swoop.
+A script to combine several AD commands to be run in one fell swoop.  
+The reason I created this file was that when I was studying for my OSCP, I realised that to perform the bloodhound collection, AS-REP roasting and Kerberoasting from Kali linux, the same credentials were needed for each.  
+**This script only automates the three tools used and allowed in the OSCP exam, so therefore should be allowed in the exam!**  
+Have fun, and any feedback will be much appreciated! :)  
 
 First Bl00d - a gerbil Production.
 
