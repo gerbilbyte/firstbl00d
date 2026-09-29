@@ -9,6 +9,7 @@ v1.2 - 20260929
 Simply rolls bloodhound-ce-python, impacket-GetNPUsers and impacket-GetUserSPNs into a single command.  
 Bloodhound data is automatically zipped up ready to be pasted into Bloodhound.  
 Also eliminates clock skews by basing time on that of the DC.  
+NOTE: AI wasn't used in any part of this code! :)  
 
 ## Requirements  
 For this to work properly the following need to be installed:
